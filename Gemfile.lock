@@ -259,6 +259,7 @@ DEPENDENCIES
   github-pages
   jekyll-data
   jekyll-feed
+  jekyll-include-cache
   minimal-mistakes-jekyll
   tzinfo (~> 1.2)
   tzinfo-data
