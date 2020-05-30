@@ -97,13 +97,11 @@ author:
   bio: 'Pretty cool dude.'
   avatar: '/assets/images/bio-pic.jpg'
   github: janMH
+  twitter: mhard61728181
   links:
     - label: 'Mastodon'
       icon: 'mastodon-icon'
       url: 'https://mstdn.social/@mhard'
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mhard"
 
 # Site Footer
 footer:
