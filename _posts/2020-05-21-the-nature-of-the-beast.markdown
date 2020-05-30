@@ -3,7 +3,6 @@ layout: single
 title:  "The Nature of The Beast"
 date:   2020-05-21 11:38:25 +0200
 categories: programming off-my-chest stream-of-consciousness
-author: Jan
 header:
   overlay_image: /assets/images/st_george_dragon.jpg
 ---

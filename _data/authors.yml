@@ -1,9 +1,0 @@
-Jan:
-  name: 'Jan'
-  bio: 'Pretty cool dude.'
-  avatar: '/assets/images/bio-pic.jpg'
-  github: janMH
-  links:
-    - label: 'Mastodon'
-      icon: 'mastodon-icon'
-      url: 'https://mstdn.social/@mhard'
