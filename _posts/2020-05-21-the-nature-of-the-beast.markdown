@@ -7,7 +7,7 @@ header:
   overlay_image: /assets/images/st_george_dragon.jpg
 ---
 
-On programming
+
 
 Everyone who programs gets to it through a different path. Some of us start out in university not really knowing yet what they are getting themselves into. Others discover it later on and teach themselves, potentially even creating a new career out of it. Others still might take part in a bootcamp with the explicit goal to create a new career. For me, like many others, it started during high school.
 
