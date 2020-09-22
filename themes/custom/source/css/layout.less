@@ -3,17 +3,17 @@
 
 body {
   color: #3b3b3b;
-  background-color: #f3f3f3;
+  background-color: @color-light;
   margin: 0;
   font-size: 16px;
-  font-family: 'PlayFair Display', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-family: 'PlayFair Display', 'Palatino Linotype', 'Book Antiqua', Palatino,
+    serif;
 }
 
 h1 {
   color: @color-dark;
   font-weight: bold;
   font-size: 3em;
-
 }
 
 h2 {
@@ -21,33 +21,38 @@ h2 {
   font-weight: 300;
 }
 
-main {
-  max-width: 1024px;
-  margin: auto;
-}
-
 #main-header {
   margin-top: 0;
   height: 400px;
-  background-color: #234350;
+  background-color: @color-secondary-1-4;
   width: 100%;
   box-sizing: border-box;
   padding: 40px;
-  color: #f3f3f3;
+  color: @color-light;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+main {
+  max-width: 1024px;
+  margin: auto;
+  background-color: white;
+  min-height: calc(100vh - 400px);
+  box-sizing: border-box;
+  padding: 2em 1.5em 7em 1.5em;
+  box-shadow: 0 3px 6px @color-medium-light;
+}
+
 #main-header h1 {
-  color: #f2f2f2;
+  color: @color-light;
   margin-top: 30px;
   font-size: 5em;
   font-weight: normal;
 }
 
 #main-header h2 {
-  color: #f2f2f2;
+  color: @color-light;
   margin-left: 10%;
   font-size: 2.5em;
   margin-top: 30px;
