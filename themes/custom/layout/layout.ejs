@@ -8,11 +8,11 @@
     <meta name="author" content="<%= config.author %>" />
     <meta name="description" content="<%= config.description %>" />
     <link rel="icon" href="<%= theme.favicon %>" type="image/png" />
-    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="<%= url_for('/css/layout.css') %>" />
   </head>
 
   <body>
     <%- body %>
-    <script src="js/script.js"></script>
+    <script src="<%= url_for('/js/script.js') %> "></script>"></script>
   </body>
 </html>

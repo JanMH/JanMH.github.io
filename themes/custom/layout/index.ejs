@@ -1,4 +1,12 @@
-<%- partial('_partials/header', {image: config.main_image}) %>
+<%- partial('_partials/header', {image: config.main_image, title: config.title, subtitle: config.subtitle }) %>
 <main>
   <%- page.content %>
+  <div class="posts">
+    <% site.posts.forEach(function(post){ %>
+      <article class="post-preview">
+        <h1><a href="<%= url_for(post.path) %>"><%= post.title %></a></h1>
+        <p class="post-excerpt"><%- post.description || post.excerpt %></p>
+      </article>
+    <% }); %>
+  </div>
 </main>

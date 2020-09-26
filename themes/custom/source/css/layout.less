@@ -3,7 +3,7 @@
 
 body {
   color: #3b3b3b;
-  background-color: @color-light;
+  background-color: #fafafa;
   margin: 0;
   font-size: 16px;
   font-family: 'PlayFair Display', 'Palatino Linotype', 'Book Antiqua', Palatino,
@@ -17,9 +17,19 @@ h1 {
 }
 
 h2 {
-  color: @color-medium-light;
+  color: @color-medium-dark;
   font-weight: 300;
 }
+
+a {
+  color: @color-primary-0;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: @color-secondary-1-0;
+}
+
 
 #main-header {
   margin-top: 0;
@@ -37,11 +47,17 @@ h2 {
 main {
   max-width: 1024px;
   margin: auto;
-  background-color: white;
-  min-height: calc(100vh - 400px);
   box-sizing: border-box;
-  padding: 2em 1.5em 7em 1.5em;
-  box-shadow: 0 3px 6px @color-medium-light;
+  padding: 1.5em;
+  padding-top: 3em;
+}
+
+.posts {
+  margin-top: 100px;
+}
+
+.post-preview h1 {
+  font-size: 1.5em;
 }
 
 #main-header h1 {
