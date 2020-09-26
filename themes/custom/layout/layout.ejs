@@ -9,10 +9,23 @@
     <meta name="description" content="<%= config.description %>" />
     <link rel="icon" href="<%= theme.favicon %>" type="image/png" />
     <link rel="stylesheet" href="<%= url_for('/css/layout.css') %>" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css"
+    />
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script
+      charset="UTF-8"
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/go.min.js"
+    ></script>
+
   </head>
 
   <body>
     <%- body %>
-    <script src="<%= url_for('/js/script.js') %> "></script>"></script>
+    <script src="<%= url_for('/js/script.js') %> "></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
