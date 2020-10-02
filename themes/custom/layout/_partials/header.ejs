@@ -1,4 +1,15 @@
-<div id="main-header" style="background-image: url(<%= url_for(image) %>);">
-  <h1><%= title  %></h1>
+<div id="header-bar">
+  <div id="header-content">
+    <a href="/" class="header-link emph"><%= config.title %></a>
+    <div class="right" style="float: right;">
+    <a href="/about" class="header-link">About</a>
+
+    <a href="https://github.com/janMH" class="header-link">Github</a>
+  </div>
+  </div>
+</div>
+
+<div id="main-header" >
+  <h1><%= title %></h1>
   <h2><%= subtitle %></h2>
 </div>

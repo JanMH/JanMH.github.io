@@ -1,13 +1,54 @@
 @import 'variables.less';
 @import 'playfair_display.less';
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: #3b3b3b;
   background-color: #fafafa;
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'PlayFair Display', 'Palatino Linotype', 'Book Antiqua', Palatino,
     serif;
+}
+
+#header-bar {
+  width: 100%;
+  background-color: @color-primary-0;
+  color: @color-light;
+  vertical-align: middle;
+}
+
+#header-content {
+  max-width: 800px;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  margin: auto;
+}
+
+.header-link {
+  margin-right: 1.5em;
+  position: relative;
+  top: .25em;
+}
+.right {
+  float: right;
+}
+.right .header-link{
+  margin-right: 0;
+  margin-left: 1.5em;
+}
+
+.header-link.emph {
+  font-size: 1.25em;
+  top: 0em;
+
+  font-weight: 500;
+}
+
+#header-bar a{
+  color: @color-light;
 }
 
 h1 {
@@ -34,18 +75,32 @@ a:hover {
 #main-header {
   margin-top: 0;
   height: 400px;
-  background-color: @color-secondary-1-4;
   width: 100%;
   box-sizing: border-box;
   padding: 40px;
-  color: @color-light;
+  color: @color-dark;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 }
 
+#main-header h1 {
+  margin-top: 30px;
+  font-size: 5em;
+  font-weight: normal;
+}
+
+#main-header h2 {
+  font-size: 2.5em;
+  margin-top: 30px;
+  font-weight: normal;
+  color: @color-medium-dark;
+}
+
+
 main {
-  max-width: 1024px;
+  max-width: 800px;
   margin: auto;
   box-sizing: border-box;
   padding: 1.5em;
@@ -60,17 +115,3 @@ main {
   font-size: 1.5em;
 }
 
-#main-header h1 {
-  color: @color-light;
-  margin-top: 30px;
-  font-size: 5em;
-  font-weight: normal;
-}
-
-#main-header h2 {
-  color: @color-light;
-  margin-left: 10%;
-  font-size: 2.5em;
-  margin-top: 30px;
-  font-weight: normal;
-}
